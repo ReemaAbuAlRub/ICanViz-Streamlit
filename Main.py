@@ -121,7 +121,7 @@ if selected == 'Home':
         c1,c2,c3=st.columns([1,1,1])
         with c2:
           spaces(2)
-          image = Image.open('//Users//reema//Desktop//Grad Project //Streamlit//Logos//logo_rotated.png')
+          image = Image.open('logo_rotated.png')
           image_r = image.resize((300, 450))
           st.image(image_r)
     st.markdown('------')
@@ -170,7 +170,7 @@ if selected == 'Home':
      
 
 elif selected == 'About':
-    image = Image.open('//Users//reema//Desktop//Grad Project //Streamlit//Logos//About Us.png')
+    image = Image.open('About Us.png')
     image_r = image.resize((1500, 500))
     st.image(image_r)
     spaces(3)
@@ -199,15 +199,15 @@ elif selected == 'About':
         spaces(2)
         with c2:
           spaces(2)
-          image = Image.open('//Users//reema//Desktop//Grad Project //Streamlit//Logos//GA4DH.jpg')
+          image = Image.open('GA4DH.jpg')
           image_r = image.resize((400, 400))
           st.image(image_r) 
           spaces(7)         
-          image = Image.open('//Users//reema//Desktop//Grad Project //Streamlit//Logos//psut.jpeg')
+          image = Image.open('psut.jpeg')
           image_r = image.resize((400, 400))
           st.image(image_r)
           spaces(9)
-          image = Image.open('//Users//reema//Desktop//Grad Project //Streamlit//Logos//ain.png')
+          image = Image.open('ain.png')
           image_r = image.resize((400, 400))
           st.image(image_r) 
  
@@ -238,7 +238,7 @@ elif selected == 'Contact Us':
    </form>
   """
   st.markdown(contact_form, unsafe_allow_html=True)
-  local_css("style//style.css")
+  local_css("style.css")
   st.write('\n')
   st.write('\n')
   st.write('\n')
