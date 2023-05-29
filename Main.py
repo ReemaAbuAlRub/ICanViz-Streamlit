@@ -5,8 +5,8 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from PIL import Image
 import plotly.graph_objects as go
-import sys
-sys.path.insert(1,'//Users//reema//Desktop//Grad Project//Streamlit//app.py//streamlit_option_menu')
+#import sys
+#sys.path.insert(1,'//Users//reema//Desktop//Grad Project//Streamlit//app.py//streamlit_option_menu')
 from streamlit_option_menu import option_menu
 from streamlit_extras.switch_page_button import switch_page
 from streamlit_extras.metric_cards import style_metric_cards
@@ -18,8 +18,8 @@ import json
 
 
 
-DSUC1=pd.read_csv('//Users//reema//Desktop//Grad Project //Streamlit//pages//DSUC1.csv')
-DSUC5=pd.read_csv('//Users//reema//Desktop//Grad Project //Streamlit//pages//DSUC5.csv')
+DSUC1=pd.read_csv('DSUC1.csv')
+DSUC5=pd.read_csv('DSUC5.csv')
 
 st.set_page_config(page_title='iCanViz',page_icon='//Users//reema//Desktop//Grad Project //Streamlit//Logos//logo_rotated.png',layout='wide')
 
