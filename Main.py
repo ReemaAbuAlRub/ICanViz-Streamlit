@@ -21,7 +21,7 @@ import json
 DSUC1=pd.read_csv('DSUC1.csv')
 DSUC5=pd.read_csv('DSUC5.csv')
 
-st.set_page_config(page_title='iCanViz',page_icon='//Users//reema//Desktop//Grad Project //Streamlit//Logos//logo_rotated.png',layout='wide')
+st.set_page_config(page_title='iCanViz',page_icon='logo_rotated.png',layout='wide')
 
 def spaces(num):
   for i in range(num):
@@ -29,25 +29,25 @@ def spaces(num):
 
 a1,a2=st.columns(2)
 with a1:
-    image = Image.open('//Users//reema//Desktop//Grad Project //Streamlit//new.png')
+    image = Image.open('new.png')
     st.image(image,width=300) #Logo
 with a2:
     s1,s2,s3=st.columns([0.1,0.1,0.1])
     with s1:
-          image = Image.open('//Users//reema//Desktop//Grad Project //Streamlit//Logos//GA4DH.jpg')
+          image = Image.open('GA4DH.jpg')
           spaces(3)
           image_r = image.resize((50, 50))
           st.image(image_r)
           st.caption(' GA4DH')
     with s2: 
           spaces(3)        
-          image = Image.open('//Users//reema//Desktop//Grad Project //Streamlit//Logos//psut.jpeg')
+          image = Image.open('psut.jpeg')
           image_r = image.resize((50, 50))
           st.image(image_r)
           st.caption('  PSUT')
     with s3:
           spaces(3)
-          image = Image.open('//Users//reema//Desktop//Grad Project //Streamlit//Logos//ain.png')
+          image = Image.open('ain.png')
           image_r = image.resize((50, 50))
           st.image(image_r) 
           st.caption('Al Ain University')
